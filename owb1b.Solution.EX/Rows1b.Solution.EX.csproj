@@ -1,15 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Bogus" Version="35.3.0" />
-  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Rows1b.Shared\Rows1b.Shared.csproj" />

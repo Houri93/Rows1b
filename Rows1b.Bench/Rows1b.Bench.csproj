@@ -8,11 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Bogus" Version="35.3.0" />
+    <PackageReference Include="BenchmarkDotNet" Version="0.13.12" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\owb1b.Solution.EX\Rows1b.Solution.EX.csproj" />
     <ProjectReference Include="..\Rows1b.Shared\Rows1b.Shared.csproj" />
+    <ProjectReference Include="..\Solution_HA\Rows1b.Solution.HA.csproj" />
   </ItemGroup>
 
 </Project>

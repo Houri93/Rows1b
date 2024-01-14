@@ -1,25 +1,21 @@
-﻿using Rows1b.Generator;
+﻿using Rows1b.Shared;
 using System.Diagnostics;
 using System.Text;
 
 var startTs = Stopwatch.GetTimestamp();
 var initTs = startTs;
 
-const int rowsCount = 1_000_000_000;//1_000_000_000;
+const int rowsCount = 100_000_000;
 const int seed = 69;
 string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), "rows1b.txt");
 
 var faker = new Bogus.Faker<Row>()
     .UseSeed(seed);
 
+faker.RuleFor(a => a.Id, b => b.IndexGlobal + 1);
 faker.RuleFor(a => a.Name, b => b.Person.FullName);
 faker.RuleFor(a => a.DateOfBirth, b => b.Person.DateOfBirth);
-faker.RuleFor(a => a.City, b => b.Person.Address.City);
-faker.RuleFor(a => a.Street, b => b.Person.Address.Street);
 faker.RuleFor(a => a.State, b => b.Person.Address.State);
-faker.RuleFor(a => a.ZipCode, b => b.Person.Address.ZipCode);
-faker.RuleFor(a => a.Company, b => b.Company.CompanyName());
-faker.RuleFor(a => a.Id, b => b.IndexGlobal);
 
 Console.WriteLine($"Generating {rowsCount} rows");
 
