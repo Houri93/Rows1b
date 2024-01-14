@@ -1,12 +1,12 @@
 					****************************************
 					*                                      *
-					*   1 British Billion Rows Challenge   *
+					*   100 Million Rows Challenge   *
 					*                                      *
 					****************************************
      
 	- Rows1b.Generator project
 		1. Project that generates the csv file, it takes almost 30 minutes to generate the file (highly unoptimised solution), no need to generate it yourself.
-		2. Download the generated csv file from "Z:\Projects\Challenges\1 Billion Rows\rows1b_100_000_000" "4.15 GB".
+		2. Download the generated csv file from "Z:\Projects\Challenges\100 Million Rows\rows1b_100_000_000" "4.15 GB".
 		3. The file contains rows and column, the rows are seperated with a newline and the cells are seperated by a tab character.
 		4. Each row is formatted as the following "{Id}\t{Name}\t{DateOfBirth:yyyy/MM/dd}\t{State}".
 
