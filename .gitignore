@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Solution_HA/Solution_HA.csproj
+/Solution_HA/Rows1b.Solution.HA.csproj
