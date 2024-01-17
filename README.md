@@ -19,15 +19,14 @@
 		3. Include the Rows1b.Shared project as a reference.
 		4. Create a class named "Rows1bSolution_*" replacing the '*' character with your initials, this class should implement the IResultsProducer Interface with your solution to the problems.
 		5. Check in the code.
-		6. Deadline is end of 19/01/2024
-		7. Each bench test will initialize your solution class via the constructor, run a single test method, then use Dispose() method from IDisposable for cleanup if needed.
+		6. Each bench test will initialize your solution class via the constructor, run a single test method, then use Dispose() method from IDisposable for cleanup if needed.
 
 	- Rows1b.Bench
 		1. This project is used to benchmark the provided solutions via benchmark dotnet.
 		2. Each method has a score of 
 
 	- Rowb1b.Solution.EX
-		This is an example project which does not implement any of the methods and earns a score 0 out of 100.
+		This is an example project which does not implement any of the methods.
 
 	- Rules:
 		1. External Libraries / Tools not allowed, this is a purly C# skills challenge.
